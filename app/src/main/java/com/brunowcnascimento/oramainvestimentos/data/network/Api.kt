@@ -7,8 +7,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object Api {
 
-    const val FUNDDETAIL = "https://s3.amazonaws.com/"
-    const val SERIALIZER = "serializer=fund_detail_full"
+    const val FUNDDETAIL = "https://s3.amazonaws.com"
+    const val SERIALIZER = "fund_detail_full"
 
     fun serviceFundDetail(): Service {
         return Retrofit.Builder()

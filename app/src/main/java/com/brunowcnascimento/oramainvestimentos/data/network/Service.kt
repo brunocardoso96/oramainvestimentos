@@ -6,6 +6,6 @@ import retrofit2.http.Query
 
 interface Service {
 
-    @GET("orama-media/json/fund_detail_full.json")
-    fun getFundDetail(@Query("serializer") serializer: String): FundDetailResponse
+    @GET("/orama-media/json/fund_detail_full.json?serializer=fund_detail_full")
+    suspend fun getFundDetail(): FundDetailResponse
 }
