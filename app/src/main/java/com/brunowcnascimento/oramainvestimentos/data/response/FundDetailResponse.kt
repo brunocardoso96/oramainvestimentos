@@ -2,470 +2,464 @@ package com.brunowcnascimento.oramainvestimentos.data.response
 
 import com.google.gson.annotations.SerializedName
 
-data class FundDetailResponse(
-
-	@SerializedName("FundDetailResponse")
-	val fundDetailResponse: List<FundDetailResponseItem>
-)
-
 data class Specification(
 
 	@SerializedName("fund_main_strategy_name")
-	val fundMainStrategyName: String,
+	var fundMainStrategyName: String,
 
 	@SerializedName("fund_risk_profile")
-	val fundRiskProfile: FundRiskProfile,
+	var fundRiskProfile: FundRiskProfile,
 
 	@SerializedName("fund_main_strategy_explanation")
-	val fundMainStrategyExplanation: String,
+	var fundMainStrategyExplanation: String,
 
 	@SerializedName("fund_class")
-	val fundClass: String,
+	var fundClass: String,
 
 	@SerializedName("fund_main_strategy")
-	val fundMainStrategy: FundMainStrategy,
+	var fundMainStrategy: FundMainStrategy,
 
 	@SerializedName("fund_suitability_profile")
-	val fundSuitabilityProfile: FundSuitabilityProfile,
+	var fundSuitabilityProfile: FundSuitabilityProfile,
 
 	@SerializedName("fund_type")
-	val fundType: String,
+	var fundType: String,
 
 	@SerializedName("fund_class_anbima")
-	val fundClassAnbima: String,
+	var fundClassAnbima: String,
 
 	@SerializedName("fund_macro_strategy")
-	val fundMacroStrategy: FundMacroStrategy,
+	var fundMacroStrategy: FundMacroStrategy,
 
 	@SerializedName("is_qualified")
-	val isQualified: Boolean
+	var isQualified: Boolean
 )
 
 data class PerformanceVideosItem(
 
 	@SerializedName("thumbnail")
-	val thumbnail: String,
+	var thumbnail: String,
 
 	@SerializedName("enabled_for_tvorama")
-	val enabledForTvorama: Boolean,
+	var enabledForTvorama: Boolean,
 
 	@SerializedName("description")
-	val description: String,
+	var description: String,
 
 	@SerializedName("published")
-	val published: String,
+	var published: String,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("title")
-	val title: String,
+	var title: String,
 
 	@SerializedName("youtube_id")
-	val youtubeId: String,
+	var youtubeId: String,
 
 	@SerializedName("url")
-	val url: String
+	var url: String
 )
 
 data class FundSuitabilityProfile(
 
 	@SerializedName("score_range_order")
-	val scoreRangeOrder: Int,
+	var scoreRangeOrder: Int,
 
 	@SerializedName("name")
-	val name: String
+	var name: String
 )
 
 data class FundDetailResponseItem(
 
 	@SerializedName("closing_date")
-	val closingDate: Any,
+	var closingDate: Any,
 
 	@SerializedName("fees")
-	val fees: Fees,
+	var fees: Fees,
 
 	@SerializedName("quota_date")
-	val quotaDate: String,
+	var quotaDate: String,
 
 	@SerializedName("orama_standard")
-	val oramaStandard: Boolean,
+	var oramaStandard: Boolean,
 
 	@SerializedName("profitabilities")
-	val profitabilities: Profitabilities,
+	var profitabilities: Profitabilities,
 
 	@SerializedName("fund_manager")
-	val fundManager: FundManager,
+	var fundManager: FundManager,
 
 	@SerializedName("documents")
-	val documents: List<DocumentsItem>,
+	var documents: List<DocumentsItem>,
 
 	@SerializedName("is_simple")
-	val isSimple: Boolean,
+	var isSimple: Boolean,
 
 	@SerializedName("fund_situation")
-	val fundSituation: FundSituation,
+	var fundSituation: FundSituation,
 
 	@SerializedName("description")
-	val description: Description,
+	var description: Description,
 
 	@SerializedName("target_fund")
-	val targetFund: Any,
+	var targetFund: Any,
 
 	@SerializedName("cnpj")
-	val cnpj: String,
+	var cnpj: String,
 
 	@SerializedName("description_seo")
-	val descriptionSeo: String,
+	var descriptionSeo: String,
 
 	@SerializedName("simple_name")
-	val simpleName: String,
+	var simpleName: String,
 
 	@SerializedName("is_closed_to_capture")
-	val isClosedToCapture: Boolean,
+	var isClosedToCapture: Boolean,
 
 	@SerializedName("initial_date")
-	val initialDate: String,
+	var initialDate: String,
 
 	@SerializedName("net_patrimony_12m")
-	val netPatrimony12m: String,
+	var netPatrimony12m: String,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("operability")
-	val operability: Operability,
+	var operability: Operability,
 
 	@SerializedName("opening_date")
-	val openingDate: Any,
+	var openingDate: Any,
 
 	@SerializedName("slug")
-	val slug: String,
+	var slug: String,
 
 	@SerializedName("is_closed")
-	val isClosed: Boolean,
+	var isClosed: Boolean,
 
 	@SerializedName("show_detailed_review")
-	val showDetailedReview: Boolean,
+	var showDetailedReview: Boolean,
 
 	@SerializedName("insurance_company_code")
-	val insuranceCompanyCode: Any,
+	var insuranceCompanyCode: Any,
 
 	@SerializedName("performance_videos")
-	val performanceVideos: List<Any>,
+	var performanceVideos: List<Any>,
 
 	@SerializedName("is_active")
-	val isActive: Boolean,
+	var isActive: Boolean,
 
 	@SerializedName("volatility_12m")
-	val volatility12m: String,
+	var volatility12m: String,
 
 	@SerializedName("specification")
-	val specification: Specification,
+	var specification: Specification,
 
 	@SerializedName("strategy_video")
-	val strategyVideo: Any,
+	var strategyVideo: Any,
 
 	@SerializedName("benchmark")
-	val benchmark: Benchmark,
+	var benchmark: Benchmark,
 
 	@SerializedName("full_name")
-	val fullName: String,
+	var fullName: String,
 
 	@SerializedName("tax_classification")
-	val taxClassification: String,
+	var taxClassification: String,
 
 	@SerializedName("esg_seal")
-	val esgSeal: Boolean,
+	var esgSeal: Boolean,
 
 	@SerializedName("performance_audios")
-	val performanceAudios: List<Any>,
+	var performanceAudios: List<Any>,
 
 	@SerializedName("closed_to_capture_explanation")
-	val closedToCaptureExplanation: String
+	var closedToCaptureExplanation: String
 )
 
 data class Fees(
 
 	@SerializedName("maximum_administration_fee")
-	val maximumAdministrationFee: String,
+	var maximumAdministrationFee: String,
 
 	@SerializedName("anticipated_retrieval_fee_value")
-	val anticipatedRetrievalFeeValue: String,
+	var anticipatedRetrievalFeeValue: String,
 
 	@SerializedName("administration_fee")
-	val administrationFee: String,
+	var administrationFee: String,
 
 	@SerializedName("anticipated_retrieval_fee")
-	val anticipatedRetrievalFee: String,
+	var anticipatedRetrievalFee: String,
 
 	@SerializedName("has_anticipated_retrieval")
-	val hasAnticipatedRetrieval: Boolean,
+	var hasAnticipatedRetrieval: Boolean,
 
 	@SerializedName("performance_fee")
-	val performanceFee: String
+	var performanceFee: String
 )
 
 data class Benchmark(
 
 	@SerializedName("name")
-	val name: String,
+	var name: String,
 
 	@SerializedName("id")
-	val id: Int
+	var id: Int
 )
 
 data class FundMacroStrategy(
 
 	@SerializedName("name")
-	val name: String,
+	var name: String,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("explanation")
-	val explanation: String
+	var explanation: String
 )
 
 data class StrategyVideo(
 
 	@SerializedName("thumbnail")
-	val thumbnail: Any,
+	var thumbnail: Any,
 
 	@SerializedName("enabled_for_tvorama")
-	val enabledForTvorama: Boolean,
+	var enabledForTvorama: Boolean,
 
 	@SerializedName("description")
-	val description: String,
+	var description: String,
 
 	@SerializedName("published")
-	val published: Any,
+	var published: Any,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("title")
-	val title: String,
+	var title: String,
 
 	@SerializedName("youtube_id")
-	val youtubeId: String,
+	var youtubeId: String,
 
 	@SerializedName("url")
-	val url: String
+	var url: String
 )
 
 data class DocumentsItem(
 
 	@SerializedName("name")
-	val name: String,
+	var name: String,
 
 	@SerializedName("position")
-	val position: Int,
+	var position: Int,
 
 	@SerializedName("document_url")
-	val documentUrl: String,
+	var documentUrl: String,
 
 	@SerializedName("document_type")
-	val documentType: String
+	var documentType: String
 )
 
 data class FundManager(
 
 	@SerializedName("full_name")
-	val fullName: String,
+	var fullName: String,
 
 	@SerializedName("name")
-	val name: String,
+	var name: String,
 
 	@SerializedName("description")
-	val description: String,
+	var description: String,
 
 	@SerializedName("logo")
-	val logo: String,
+	var logo: String,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("slug")
-	val slug: String
+	var slug: String
 )
 
 data class Description(
 
 	@SerializedName("strengths")
-	val strengths: String,
+	var strengths: String,
 
 	@SerializedName("target_audience")
-	val targetAudience: String,
+	var targetAudience: String,
 
 	@SerializedName("strategy")
-	val strategy: String,
+	var strategy: String,
 
 	@SerializedName("movie_url")
-	val movieUrl: Any,
+	var movieUrl: Any,
 
 	@SerializedName("objective")
-	val objective: String
+	var objective: String
 )
 
 data class FundSituation(
 
 	@SerializedName("code")
-	val code: String,
+	var code: String,
 
 	@SerializedName("name")
-	val name: String
+	var name: String
 )
 
 data class FundRiskProfile(
 
 	@SerializedName("score_range_order")
-	val scoreRangeOrder: Int,
+	var scoreRangeOrder: Int,
 
 	@SerializedName("name")
-	val name: String
+	var name: String
 )
 
 data class Profitabilities(
 
 	@SerializedName("m48")
-	val m48: String,
+	var m48: String,
 
 	@SerializedName("m36")
-	val m36: String,
+	var m36: String,
 
 	@SerializedName("month")
-	val month: String,
+	var month: String,
 
 	@SerializedName("year")
-	val year: String,
+	var year: String,
 
 	@SerializedName("m60")
-	val m60: String,
+	var m60: String,
 
 	@SerializedName("day")
-	val day: String,
+	var day: String,
 
 	@SerializedName("m24")
-	val m24: String,
+	var m24: String,
 
 	@SerializedName("m12")
-	val m12: String
+	var m12: String
 )
 
 data class FundMainStrategy(
 
 	@SerializedName("name")
-	val name: String,
+	var name: String,
 
 	@SerializedName("id")
-	val id: Int,
+	var id: Int,
 
 	@SerializedName("explanation")
-	val explanation: String,
+	var explanation: String,
 
 	@SerializedName("fund_macro_strategy")
-	val fundMacroStrategy: Int
+	var fundMacroStrategy: Int
 )
 
 data class Operability(
 
 	@SerializedName("has_grace_period")
-	val hasGracePeriod: Boolean,
+	var hasGracePeriod: Boolean,
 
 	@SerializedName("has_operations_on_tuesdays")
-	val hasOperationsOnTuesdays: Boolean,
+	var hasOperationsOnTuesdays: Boolean,
 
 	@SerializedName("anticipate_retrieval_liquidation_days_type")
-	val anticipateRetrievalLiquidationDaysType: String,
+	var anticipateRetrievalLiquidationDaysType: String,
 
 	@SerializedName("has_operations_on_wednesdays")
-	val hasOperationsOnWednesdays: Boolean,
+	var hasOperationsOnWednesdays: Boolean,
 
 	@SerializedName("anticipate_retrieval_liquidation_days_str")
-	val anticipateRetrievalLiquidationDaysStr: String,
+	var anticipateRetrievalLiquidationDaysStr: String,
 
 	@SerializedName("anticipated_retrieval_quotation_days_type")
-	val anticipatedRetrievalQuotationDaysType: String,
+	var anticipatedRetrievalQuotationDaysType: String,
 
 	@SerializedName("anticipate_retrieval_liquidation_days")
-	val anticipateRetrievalLiquidationDays: Int,
+	var anticipateRetrievalLiquidationDays: Int,
 
 	@SerializedName("retrieval_special_type")
-	val retrievalSpecialType: String,
+	var retrievalSpecialType: String,
 
 	@SerializedName("maximum_initial_application_amount")
-	val maximumInitialApplicationAmount: String,
+	var maximumInitialApplicationAmount: String,
 
 	@SerializedName("grace_period_in_days_str")
-	val gracePeriodInDaysStr: Any,
+	var gracePeriodInDaysStr: Any,
 
 	@SerializedName("retrieval_quotation_days_type")
-	val retrievalQuotationDaysType: String,
+	var retrievalQuotationDaysType: String,
 
 	@SerializedName("has_operations_on_mondays")
-	val hasOperationsOnMondays: Boolean,
+	var hasOperationsOnMondays: Boolean,
 
 	@SerializedName("retrieval_time_limit")
-	val retrievalTimeLimit: String,
+	var retrievalTimeLimit: String,
 
 	@SerializedName("retrieval_quotation_days_str")
-	val retrievalQuotationDaysStr: String,
+	var retrievalQuotationDaysStr: String,
 
 	@SerializedName("grace_period_in_days")
-	val gracePeriodInDays: Int,
+	var gracePeriodInDays: Int,
 
 	@SerializedName("retrieval_direct")
-	val retrievalDirect: Boolean,
+	var retrievalDirect: Boolean,
 
 	@SerializedName("max_balance_permanence")
-	val maxBalancePermanence: String,
+	var maxBalancePermanence: String,
 
 	@SerializedName("anticipated_retrieval_quotation_days_str")
-	val anticipatedRetrievalQuotationDaysStr: String,
+	var anticipatedRetrievalQuotationDaysStr: String,
 
 	@SerializedName("anticipated_retrieval_quotation_days")
-	val anticipatedRetrievalQuotationDays: Int,
+	var anticipatedRetrievalQuotationDays: Int,
 
 	@SerializedName("retrieval_liquidation_days_str")
-	val retrievalLiquidationDaysStr: String,
+	var retrievalLiquidationDaysStr: String,
 
 	@SerializedName("application_time_limit")
-	val applicationTimeLimit: String,
+	var applicationTimeLimit: String,
 
 	@SerializedName("has_operations_on_thursdays")
-	val hasOperationsOnThursdays: Boolean,
+	var hasOperationsOnThursdays: Boolean,
 
 	@SerializedName("retrieval_quotation_days")
-	val retrievalQuotationDays: Int,
+	var retrievalQuotationDays: Int,
 
 	@SerializedName("application_quotation_days_type")
-	val applicationQuotationDaysType: String,
+	var applicationQuotationDaysType: String,
 
 	@SerializedName("minimum_subsequent_retrieval_amount")
-	val minimumSubsequentRetrievalAmount: String,
+	var minimumSubsequentRetrievalAmount: String,
 
 	@SerializedName("minimum_balance_permanence")
-	val minimumBalancePermanence: String,
+	var minimumBalancePermanence: String,
 
 	@SerializedName("has_operations_on_fridays")
-	val hasOperationsOnFridays: Boolean,
+	var hasOperationsOnFridays: Boolean,
 
 	@SerializedName("retrieval_liquidation_days_type")
-	val retrievalLiquidationDaysType: String,
+	var retrievalLiquidationDaysType: String,
 
 	@SerializedName("minimum_subsequent_application_amount")
-	val minimumSubsequentApplicationAmount: String,
+	var minimumSubsequentApplicationAmount: String,
 
 	@SerializedName("application_quotation_days_str")
-	val applicationQuotationDaysStr: String,
+	var applicationQuotationDaysStr: String,
 
 	@SerializedName("minimum_initial_application_amount")
-	val minimumInitialApplicationAmount: String,
+	var minimumInitialApplicationAmount: String,
 
 	@SerializedName("retrieval_liquidation_days")
-	val retrievalLiquidationDays: Int,
+	var retrievalLiquidationDays: Int,
 
 	@SerializedName("application_quotation_days")
-	val applicationQuotationDays: Int
+	var applicationQuotationDays: Int
 )

@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initialize()
-
+        viewModel.getFundDetail()
     }
 
     private fun initialize() {
@@ -38,9 +38,9 @@ class HomeActivity : AppCompatActivity() {
 
         viewModel.fundDetailLiveData.observe(this) {
             it.forEach {
-                Log.d(TAG, it.toString())
+                Log.i("TAGteste", it.name?: "" )
             }
         }
-        viewModel.getFundDetail()
+
     }
 }

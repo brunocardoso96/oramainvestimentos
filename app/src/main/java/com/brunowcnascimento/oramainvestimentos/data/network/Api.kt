@@ -1,5 +1,6 @@
 package com.brunowcnascimento.oramainvestimentos.data.network
 
+import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -7,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object Api {
 
-    const val FUNDDETAIL = "https://s3.amazonaws.com"
+    val FUNDDETAIL = "https://s3.amazonaws.com"
     const val SERIALIZER = "fund_detail_full"
 
     fun serviceFundDetail(): Service {
@@ -16,7 +17,7 @@ object Api {
             .addConverterFactory(GsonConverterFactory.create())
             .client(OkHttpClient.Builder().apply {
                 addInterceptor(HttpLoggingInterceptor().apply {
-                    level = HttpLoggingInterceptor.Level.BODY
+                    level = HttpLoggingInterceptor.Level.HEADERS
                 })
             }.build())
             .build().create(Service::class.java)
