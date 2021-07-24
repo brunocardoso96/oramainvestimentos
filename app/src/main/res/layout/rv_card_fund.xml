@@ -96,9 +96,10 @@
         app:layout_constraintTop_toTopOf="@+id/initApplicationText"/>
 
     <View
+        android:id="@+id/barLeft"
         android:layout_width="7dp"
         android:layout_height="0dp"
-        android:background="@drawable/bar_left"
+        android:background="@drawable/bar_left_yellow"
         app:layout_constraintBottom_toBottomOf="@+id/initApplicationText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/strategy" />

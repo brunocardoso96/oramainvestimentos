@@ -12,4 +12,7 @@
     <color name="text_color_strategy">#757678</color>
     <color name="grey_medium">#909192</color>
     <color name="grey_drak">#505152</color>
+    <color name="bar_left_green">#91ed6e</color>
+    <color name="bar_left_orange">#ff8800</color>
+    <color name="bar_left_yellow">#fbf200</color>
 </resources>
