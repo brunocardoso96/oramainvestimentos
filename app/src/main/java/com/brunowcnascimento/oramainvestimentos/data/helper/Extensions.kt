@@ -1,7 +1,11 @@
 package com.brunowcnascimento.oramainvestimentos.data.helper
 
 import android.view.View
+import android.widget.TextView
 import com.brunowcnascimento.oramainvestimentos.R
+import org.w3c.dom.Text
+import java.text.NumberFormat
+import java.util.*
 
 fun View.setBarColor(risk: Int?) {
     when(risk) {
@@ -9,4 +13,9 @@ fun View.setBarColor(risk: Int?) {
         2 -> setBackgroundResource(R.drawable.bar_left_yellow)
         3 -> setBackgroundResource(R.drawable.bar_left_orange)
     }
+}
+
+fun TextView.formatCurrency(value: String?) {
+    val real = Locale("pt", "BR")
+    NumberFormat.getCurrencyInstance(real).format(value?.toDouble())
 }
