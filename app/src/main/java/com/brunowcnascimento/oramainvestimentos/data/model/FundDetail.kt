@@ -5,5 +5,6 @@ data class FundDetail(
     val specification: String?,
     val simpleName: String?,
     val minInitApplication: String?,
-    val last12Months: String?
+    val last12Months: String?,
+    val risk: Int?
 )

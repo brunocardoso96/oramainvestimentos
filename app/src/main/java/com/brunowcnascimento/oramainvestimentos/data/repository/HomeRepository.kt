@@ -17,11 +17,12 @@ class HomeRepository {
         list.forEach {
                 listFund.add(
                     FundDetail(
-                        name = it.specification.fundMainStrategy.name,
+                        name = it.specification.fundMacroStrategy.name,
                         specification = it.specification.fundMainStrategyName,
                         simpleName = it.simpleName,
                         minInitApplication = it.operability.minimumInitialApplicationAmount,
-                        last12Months = it.profitabilities.m12
+                        last12Months = it.profitabilities.m12,
+                        risk = it.specification.fundSuitabilityProfile.scoreRangeOrder
                     )
                 )
         }
