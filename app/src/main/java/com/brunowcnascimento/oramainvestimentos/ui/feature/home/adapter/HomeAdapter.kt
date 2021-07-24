@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.brunowcnascimento.oramainvestimentos.data.helper.formatCurrency
+import com.brunowcnascimento.oramainvestimentos.data.helper.formatPercent
 import com.brunowcnascimento.oramainvestimentos.data.helper.setBarColor
 import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
 import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
@@ -35,7 +36,7 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
             specification.text = listFund.specification
             simpleName.text = listFund.simpleName
             minInitApplication.text = listFund.minInitApplication?.formatCurrency()
-            porcent.text = listFund.last12Months
+            percent.text = listFund.last12Months?.formatPercent()
             barLeft.setBarColor(listFund.risk)
         }
     }

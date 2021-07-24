@@ -73,7 +73,7 @@
 
 
     <TextView
-        android:id="@+id/porcent"
+        android:id="@+id/percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6,09%"
