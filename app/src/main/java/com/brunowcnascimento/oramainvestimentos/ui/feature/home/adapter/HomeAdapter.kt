@@ -3,9 +3,9 @@ package com.brunowcnascimento.oramainvestimentos.ui.feature.home.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.brunowcnascimento.oramainvestimentos.data.helper.formatCurrency
-import com.brunowcnascimento.oramainvestimentos.data.helper.formatPercent
-import com.brunowcnascimento.oramainvestimentos.data.helper.setBarColor
+import com.brunowcnascimento.oramainvestimentos.helper.formatCurrency
+import com.brunowcnascimento.oramainvestimentos.helper.formatPercent
+import com.brunowcnascimento.oramainvestimentos.helper.setBarColor
 import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
 import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
 
@@ -42,7 +42,6 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
     }
 
     override fun getItemCount(): Int = listFundDetail.size
-
 
     class HomeViewHolder(val binding: RvCardFundBinding): RecyclerView.ViewHolder(binding.root)
 }

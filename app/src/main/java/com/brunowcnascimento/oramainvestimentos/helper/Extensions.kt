@@ -1,9 +1,7 @@
-package com.brunowcnascimento.oramainvestimentos.data.helper
+package com.brunowcnascimento.oramainvestimentos.helper
 
 import android.view.View
-import android.widget.TextView
 import com.brunowcnascimento.oramainvestimentos.R
-import org.w3c.dom.Text
 import java.text.DecimalFormat
 import java.text.NumberFormat
 import java.util.*
@@ -24,5 +22,4 @@ fun String.formatCurrency(): String {
 fun String.formatPercent() : String {
     val df = DecimalFormat("#,##0.00")
     return "${df.format(this.toDouble() * 100)}%"
-
 }

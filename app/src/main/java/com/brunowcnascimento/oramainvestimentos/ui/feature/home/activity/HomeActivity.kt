@@ -17,7 +17,6 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var viewModel: HomeViewModel
     private lateinit var recyclerViewHome: RecyclerView
     private val adapterHome = HomeAdapter()
-    private val TAG = HomeActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
