@@ -7,7 +7,7 @@
     tools:context=".ui.feature.home.activity.HomeActivity">
 
     <include
-        android:id="@+id/include"
+        android:id="@+id/includeActionBar"
         layout="@layout/action_bar_home"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -15,6 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHome"
+        android:layout_width="409dp"
+        android:layout_height="669dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="61dp"
+        app:layout_constraintTop_toBottomOf="@+id/includeActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
