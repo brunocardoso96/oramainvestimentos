@@ -3,7 +3,6 @@ package com.brunowcnascimento.oramainvestimentos.ui.feature.home.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.brunowcnascimento.oramainvestimentos.R
 import com.brunowcnascimento.oramainvestimentos.data.helper.formatCurrency
 import com.brunowcnascimento.oramainvestimentos.data.helper.setBarColor
 import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
@@ -35,7 +34,7 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
             strategy.text = listFund.name
             specification.text = listFund.specification
             simpleName.text = listFund.simpleName
-            minInitApplication.formatCurrency(listFund.minInitApplication)
+            minInitApplication.text = listFund.minInitApplication?.formatCurrency()
             porcent.text = listFund.last12Months
             barLeft.setBarColor(listFund.risk)
         }

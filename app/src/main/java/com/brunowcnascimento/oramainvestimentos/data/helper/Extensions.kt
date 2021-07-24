@@ -15,7 +15,7 @@ fun View.setBarColor(risk: Int?) {
     }
 }
 
-fun TextView.formatCurrency(value: String?) {
+fun String.formatCurrency(): String {
     val real = Locale("pt", "BR")
-    NumberFormat.getCurrencyInstance(real).format(value?.toDouble())
+    return NumberFormat.getCurrencyInstance(real).format(this.toDouble())
 }
