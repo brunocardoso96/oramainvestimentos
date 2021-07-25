@@ -6,25 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.feature.home.activity.HomeActivity">
 
-    <include
-        android:id="@+id/includeActionBar"
-        layout="@layout/action_bar_home"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHome"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="16dp"
         android:background="@color/color_recycler"
+        tools:listitem="@layout/rv_card_fund"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/includeActionBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

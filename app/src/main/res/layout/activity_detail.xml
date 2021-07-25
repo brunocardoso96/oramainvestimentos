@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.feature.detail.DetailActivity">
+
+            <LinearLayout
+                android:id="@+id/investmentPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:text="Mês"
+                    android:textColor="@color/grey_dark_2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:text="2021"
+                    android:textColor="@color/grey_dark_2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:textStyle=""
+                    android:text="12M"
+                    android:textColor="@color/grey_dark_2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:layout_weight="1dp"
+        android:paddingHorizontal="3dp"
+        android:paddingEnd="3dp"
+        android:background="@color/grey_light"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="@id/investmentPeriod"
+        app:layout_constraintEnd_toEndOf="@id/investmentPeriod"
+        app:layout_constraintTop_toBottomOf="@id/investmentPeriod">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="1.79%"
+            android:textColor="@color/green_water"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="1.79%"
+            android:textColor="@color/green_water"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="1.79%"
+            android:textColor="@color/green_water"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

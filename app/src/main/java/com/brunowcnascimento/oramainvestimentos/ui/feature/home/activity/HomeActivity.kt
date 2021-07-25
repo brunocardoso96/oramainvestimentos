@@ -29,13 +29,8 @@ class HomeActivity : AppCompatActivity() {
 
     private fun initialize() {
         viewBind()
-        setupActionBar()
         setupRecycler()
         setupViewModel()
-    }
-
-    private fun setupActionBar() {
-        supportActionBar?.hide()
     }
 
     private fun setupRecycler() {
