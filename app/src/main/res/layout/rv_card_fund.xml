@@ -40,7 +40,7 @@
         android:id="@+id/simpleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="@dimen/simple_name_width"
+        android:maxWidth="@dimen/layout_width_270"
         tools:text="Órama DI Tesouro FIRF Simples LP"
         android:textColor="@color/grey_drak"
         android:textSize="@dimen/text_size_18"
@@ -99,8 +99,8 @@
 
     <View
         android:id="@+id/barLeft"
-        android:layout_width="@dimen/bar_left_width"
-        android:layout_height="@dimen/bar_left_height"
+        android:layout_width="@dimen/layout_width_7"
+        android:layout_height="@dimen/layout_width_0"
         android:background="@drawable/bar_left_yellow"
         app:layout_constraintBottom_toBottomOf="@+id/initApplicationText"
         app:layout_constraintStart_toStartOf="parent"

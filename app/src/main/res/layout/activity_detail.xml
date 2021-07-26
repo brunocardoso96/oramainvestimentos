@@ -16,9 +16,9 @@
             android:id="@+id/dividendsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,14 +31,13 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="@dimen/layout_width_50"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="Dividendos"
+                    tools:text="Dividendos"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,34 +45,34 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:text="Mês"
+                    android:text="@string/last_month"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:text="2021"
+                    android:text="@string/last_year"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:text="12M"
+                    android:text="@string/last_twelve_months"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_18" />
 
             </LinearLayout>
 
@@ -84,44 +83,44 @@
 
                 <TextView
                     android:id="@+id/yearPercent"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="1.79%"
+                    tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_18" />
 
                 <TextView
                     android:id="@+id/twelvePercent"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="1.79%"
+                    tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_18" />
 
                 <TextView
                     android:id="@+id/monthPercent"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/layout_width_0"
+                    android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="1.79%"
+                    tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_size_18" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/retrievalLayout"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/layout_width_0"
             android:layout_height="match_parent"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="@dimen/margin_12"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="@id/dividendsLayout"
             app:layout_constraintStart_toStartOf="@id/dividendsLayout"
@@ -138,10 +137,10 @@
                     android:layout_weight="1"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:padding="8dp"
-                    android:text="Prazo de cotização\n de resgate"
+                    android:padding="@dimen/padding_8"
+                    android:text="@string/term_quote"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
 
                 <TextView
                     android:id="@+id/retrievalDate"
@@ -150,15 +149,15 @@
                     android:layout_weight="1"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="D+30"
+                    tools:text="D+30"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_8"
                 android:orientation="horizontal">
 
                 <TextView
@@ -167,10 +166,10 @@
                     android:layout_weight="1"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:padding="8dp"
-                    android:text="Resgate\n mínimo"
+                    android:padding="@dimen/padding_8"
+                    android:text="@string/minimum_retrieval"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
 
                 <TextView
                     android:id="@+id/minimalRetrievalValor"
@@ -179,15 +178,15 @@
                     android:layout_weight="1"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="R$ 250,00"
+                    tools:text="R$ 250,00"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_8"
                 android:orientation="horizontal">
 
                 <TextView
@@ -196,10 +195,10 @@
                     android:layout_weight="1"
                     android:background="@color/grey_light"
                     android:gravity="center"
-                    android:padding="8dp"
-                    android:text="Saldo mínimo \n de permanência"
+                    android:padding="@dimen/padding_8"
+                    android:text="@string/balance_permanence"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
 
                 <TextView
                     android:id="@+id/minimumBalance"
@@ -208,47 +207,46 @@
                     android:layout_weight="1"
                     android:background="@color/white"
                     android:gravity="center"
-                    android:text="R$ 250,00"
+                    tools:text="R$ 250,00"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_size_20" />
             </LinearLayout>
-
         </LinearLayout>
-
 
         <TextView
             android:id="@+id/tipInfo"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_width_80"
+            android:layout_marginTop="@dimen/margin_8"
             android:background="@color/white"
-            android:padding="10dp"
-            android:text="DICA: Este investimento é a opção para quem quer exposição à bolsa com uma gestão profissional na seleção de ações."
+            android:padding="@dimen/padding_10"
+            android:text="@string/tip"
             android:textColor="@color/green_water"
-            android:textSize="16dp"
+            android:textSize="@dimen/text_size_16"
             app:layout_constraintEnd_toEndOf="@id/retrievalLayout"
             app:layout_constraintStart_toStartOf="@id/retrievalLayout"
             app:layout_constraintTop_toBottomOf="@id/retrievalLayout" />
 
         <TextView
             android:id="@+id/rulesApplication"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="12dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_height_60"
+            android:layout_marginTop="@dimen/margin_12"
             android:background="@color/grey_light"
             android:gravity="left|center"
-            android:paddingStart="14dp"
-            android:text="Regras para aplicação"
-            android:textSize="20sp"
+            android:paddingStart="@dimen/padding_14"
+            android:text="@string/rules_application"
+            android:textSize="@dimen/text_size_20"
             app:layout_constraintEnd_toEndOf="@id/tipInfo"
             app:layout_constraintStart_toStartOf="@id/tipInfo"
-            app:layout_constraintTop_toBottomOf="@id/tipInfo" />
+            app:layout_constraintTop_toBottomOf="@id/tipInfo"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
 
         <LinearLayout
             android:id="@+id/firstApplicationLayout"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_width_40"
+            android:layout_marginTop="@dimen/margin_8"
             app:layout_constraintEnd_toEndOf="@+id/rulesApplication"
             app:layout_constraintStart_toStartOf="@+id/rulesApplication"
             app:layout_constraintTop_toBottomOf="@+id/rulesApplication">
@@ -257,15 +255,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|left"
-                android:paddingStart="14dp"
-                android:text="Mínimo para 1ª aplicação"
+                android:text="@string/minimum_first_application"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="14sp"
-                app:layout_constraintHorizontal_bias="0.5"
+                android:textSize="@dimen/text_size_14"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/padding_14"
+                android:background="@color/white"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
-                tools:layout_editor_absoluteY="308dp" />
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
                 android:id="@+id/firstApplication"
@@ -274,18 +271,18 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|right"
-                android:paddingRight="14dp"
-                android:text="R$ 250,00"
+                android:paddingEnd="@dimen/padding_14"
+                tools:text="R$ 250,00"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteY="308dp" />
+                android:textSize="@dimen/text_size_16"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/firstRescueLayout"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_width_40"
+            android:layout_marginTop="@dimen/margin_8"
             app:layout_constraintEnd_toEndOf="@+id/firstApplicationLayout"
             app:layout_constraintStart_toStartOf="@+id/firstApplicationLayout"
             app:layout_constraintTop_toBottomOf="@+id/firstApplicationLayout">
@@ -296,13 +293,12 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|left"
-                android:paddingStart="14dp"
-                android:text="Mínimo para aplicações \nadicionais"
+                android:paddingStart="@dimen/padding_14"
+                android:text="@string/minimum_application"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="14sp"
-                app:layout_constraintHorizontal_bias="0.5"
+                android:textSize="@dimen/text_size_14"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
-                tools:layout_editor_absoluteY="308dp" />
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
                 android:id="@+id/applicationMinimum"
@@ -311,18 +307,18 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|right"
-                android:paddingRight="14dp"
-                android:text="R$ 250,00"
+                android:paddingEnd="@dimen/padding_14"
+                tools:text="R$ 250,00"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteY="308dp" />
+                android:textSize="@dimen/text_size_16"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/applicationRescueDayLayout"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_width_40"
+            android:layout_marginTop="@dimen/margin_8"
             app:layout_constraintEnd_toEndOf="@+id/firstRescueLayout"
             app:layout_constraintStart_toStartOf="@+id/firstRescueLayout"
             app:layout_constraintTop_toBottomOf="@+id/firstRescueLayout">
@@ -333,13 +329,12 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|left"
-                android:paddingStart="14dp"
-                android:text="Dias para conversão da \naplicação"
+                android:paddingStart="@dimen/padding_14"
+                android:text="@string/days_convert"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="14sp"
-                app:layout_constraintHorizontal_bias="0.5"
+                android:textSize="@dimen/text_size_14"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
-                tools:layout_editor_absoluteY="308dp" />
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
                 android:id="@+id/dayConvert"
@@ -348,18 +343,18 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|right"
-                android:paddingRight="14dp"
-                android:text="R$ 250,00"
+                android:paddingEnd="@dimen/padding_14"
+                tools:text="R$ 250,00"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteY="308dp" />
+                android:textSize="@dimen/text_size_16"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/applicationRescueHourLayout"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_width_40"
+            android:layout_marginTop="@dimen/margin_8"
             app:layout_constraintEnd_toEndOf="@+id/applicationRescueDayLayout"
             app:layout_constraintStart_toStartOf="@+id/applicationRescueDayLayout"
             app:layout_constraintTop_toBottomOf="@+id/applicationRescueDayLayout">
@@ -370,13 +365,12 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|left"
-                android:paddingStart="14dp"
-                android:text="Horário limite para \naplicação"
+                android:paddingStart="@dimen/padding_14"
+                android:text="@string/hour_limit"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="14sp"
-                app:layout_constraintHorizontal_bias="0.5"
+                android:textSize="@dimen/text_size_14"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
-                tools:layout_editor_absoluteY="308dp" />
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
                 android:id="@+id/hourApplication"
@@ -385,11 +379,11 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center|right"
-                android:paddingRight="14dp"
-                android:text="14:00"
+                android:paddingEnd="@dimen/padding_14"
+                tools:text="14:00"
                 android:textColor="@color/grey_dark_2"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteY="308dp" />
+                android:textSize="@dimen/text_size_16"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

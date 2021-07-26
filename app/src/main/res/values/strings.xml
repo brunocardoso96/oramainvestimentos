@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Fundos</string>
+    <string name="hour_limit">Horário limite para \naplicação</string>
+    <string name="days_convert">Dias para conversão da \naplicação</string>
+    <string name="minimum_application">Mínimo para aplicações \nadicionais</string>
+    <string name="minimum_first_application">Mínimo para 1ª aplicação</string>
+    <string name="tip">DICA: Este investimento é a opção para quem quer exposição à bolsa com uma gestão profissional na seleção de ações.</string>
+    <string name="balance_permanence">Saldo mínimo \nde permanência</string>
+    <string name="minimum_retrieval">Resgate\n mínimo</string>
+    <string name="term_quote">Prazo de cotização\n de resgate</string>
+    <string name="last_twelve_months">12M</string>
+    <string name="last_year">2021</string>
+    <string name="last_month">Mês</string>
+    <string name="rules_application">Regras para aplicação</string>
 </resources>
