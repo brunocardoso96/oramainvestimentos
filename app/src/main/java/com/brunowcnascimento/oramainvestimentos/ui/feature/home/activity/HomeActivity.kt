@@ -16,7 +16,9 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private lateinit var viewModel: HomeViewModel
     private lateinit var recyclerViewHome: RecyclerView
-    private val adapterHome = HomeAdapter()
+    private val adapterHome = HomeAdapter {
+        Log.i("TAG", "Click Succeefull, ${it.simpleName}")
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -9,7 +9,9 @@ import com.brunowcnascimento.oramainvestimentos.helper.setBarColor
 import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
 import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
 
-class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
+class HomeAdapter(
+    private val onItemClickListener: (list: FundDetail) -> Unit
+) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
 
     private val listFundDetail = ArrayList<FundDetail>()
 
@@ -38,6 +40,9 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
             minInitApplication.text = listFund.minInitApplication?.formatCurrency()
             percent.text = listFund.last12Months?.formatPercent()
             barLeft.setBarColor(listFund.risk)
+            cardFund.setOnClickListener {
+                onItemClickListener.invoke(listFund)
+            }
         }
     }
 
