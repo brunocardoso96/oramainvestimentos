@@ -41,9 +41,9 @@ class HomeActivity : AppCompatActivity() {
 
     private fun observerFunDetail() {
         viewModel.fundDetailLiveData.observe(this) {
-            adapterHome = HomeAdapter(it) {
+            adapterHome = HomeAdapter(it) { fundDetail ->
                 val intent = DetailActivity.getStartIntent(applicationContext)
-                intent.putExtra(DetailActivity.fundDetailTag, it)
+                intent.putExtra(DetailActivity.fundDetailTag, fundDetail)
                 startActivity(intent)
             }
             setupRecycler()

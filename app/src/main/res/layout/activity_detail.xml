@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -142,20 +143,19 @@
         android:text="Prazo de cotização\n de resgate"
         android:textColor="@color/grey_dark_2"
         android:textSize="20sp"
-
         app:layout_constraintEnd_toStartOf="@+id/quoteDate"
         app:layout_constraintStart_toStartOf="@id/monthPercent"
         app:layout_constraintTop_toBottomOf="@id/monthPercent" />
 
     <TextView
-        android:id="@+id/minimalApplication"
+        android:id="@+id/minimalRetrieval"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/grey_light"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Aplicação\n mínima"
+        android:text="Resgate\n mínimo"
         android:textColor="@color/grey_dark_2"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/minimalApplicationValor"
@@ -174,15 +174,15 @@
         android:text="R$ 250,00"
         android:textColor="@color/grey_dark_2"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/minimalApplication"
+        app:layout_constraintBottom_toBottomOf="@id/minimalRetrieval"
         app:layout_constraintEnd_toEndOf="@id/quoteDate"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/minimalApplication"
-        app:layout_constraintTop_toTopOf="@id/minimalApplication"
+        app:layout_constraintStart_toEndOf="@+id/minimalRetrieval"
+        app:layout_constraintTop_toTopOf="@id/minimalRetrieval"
         tools:layout_editor_absoluteY="240dp" />
 
     <TextView
-        android:id="@+id/applicationAdd"
+        android:id="@+id/txtMinimumBalance"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/white"
@@ -191,28 +191,28 @@
         android:text="R$ 250,00"
         android:textColor="@color/grey_dark_2"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="@id/textView11"
-        app:layout_constraintBottom_toBottomOf="@id/textView11"
+        app:layout_constraintTop_toTopOf="@id/minimumBalance"
+        app:layout_constraintBottom_toBottomOf="@id/minimumBalance"
         app:layout_constraintEnd_toEndOf="@id/minimalApplicationValor"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/minimumBalance"
         tools:layout_editor_absoluteY="308dp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/minimumBalance"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/grey_light"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Aplicação\n adicional"
+        android:text="Saldo mínimo \n de permanência"
         android:textColor="@color/grey_dark_2"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/minimalApplication"
-        app:layout_constraintEnd_toStartOf="@+id/applicationAdd"
+        app:layout_constraintTop_toBottomOf="@id/minimalRetrieval"
+        app:layout_constraintEnd_toStartOf="@+id/txtMinimumBalance"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="@id/minimalApplication"
+        app:layout_constraintStart_toStartOf="@id/minimalRetrieval"
         tools:layout_editor_absoluteY="308dp" />
 
     <TextView
@@ -225,9 +225,9 @@
         android:textSize="16dp"
         android:text="DICA: Este investimento é a opção para quem quer exposição à bolsa com uma gestão profissional na seleção de ações."
         android:textColor="@color/green_water"
-        app:layout_constraintStart_toStartOf="@id/textView11"
-        app:layout_constraintTop_toBottomOf="@id/textView11"
-        app:layout_constraintEnd_toEndOf="@id/applicationAdd"/>
+        app:layout_constraintStart_toStartOf="@id/minimumBalance"
+        app:layout_constraintTop_toBottomOf="@id/minimumBalance"
+        app:layout_constraintEnd_toEndOf="@id/txtMinimumBalance"/>
 
     <TextView
         android:id="@+id/rulesApplication"
@@ -263,7 +263,7 @@
             android:textColor="@color/grey_dark_2"
             android:textSize="14sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/minimumBalance"
             tools:layout_editor_absoluteY="308dp" />
 
         <TextView
@@ -300,7 +300,7 @@
             android:textColor="@color/grey_dark_2"
             android:textSize="14sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/minimumBalance"
             tools:layout_editor_absoluteY="308dp" />
 
         <TextView
@@ -337,7 +337,7 @@
             android:textColor="@color/grey_dark_2"
             android:textSize="14sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/minimumBalance"
             tools:layout_editor_absoluteY="308dp" />
 
         <TextView
@@ -374,7 +374,7 @@
             android:textColor="@color/grey_dark_2"
             android:textSize="14sp"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/minimumBalance"
             tools:layout_editor_absoluteY="308dp" />
 
         <TextView
