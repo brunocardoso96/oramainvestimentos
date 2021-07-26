@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C6C6C6"
     tools:context=".ui.feature.detail.activity.DetailActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,6 +19,7 @@
             android:layout_marginTop="@dimen/margin_8"
             android:layout_marginEnd="@dimen/margin_8"
             android:orientation="vertical"
+            android:background="@color/grey_light"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -32,11 +32,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/layout_width_50"
-                    android:background="@color/white"
-                    android:gravity="center"
-                    tools:text="Dividendos"
+                    android:text="@string/dividends"
+                    android:textSize="@dimen/text_size_20"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:background="@color/white"
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -48,37 +48,40 @@
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
                     android:text="@string/last_month"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center"/>
 
                 <TextView
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
                     android:text="@string/last_year"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center" />
 
                 <TextView
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_60"
                     android:layout_weight="3"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
                     android:text="@string/last_twelve_months"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_18" />
-
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/grey_light"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="2dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -86,33 +89,33 @@
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
-                    android:background="@color/white"
-                    android:gravity="center"
                     tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="@dimen/text_size_18" />
+                    android:textSize="@dimen/text_size_18"
+                    android:background="@color/white"
+                    android:gravity="center"/>
 
                 <TextView
                     android:id="@+id/twelvePercent"
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
-                    android:background="@color/white"
-                    android:gravity="center"
                     tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="@dimen/text_size_18" />
+                    android:textSize="@dimen/text_size_18"
+                    android:background="@color/white"
+                    android:gravity="center"/>
 
                 <TextView
                     android:id="@+id/monthPercent"
                     android:layout_width="@dimen/layout_width_0"
                     android:layout_height="@dimen/layout_height_40"
                     android:layout_weight="3"
-                    android:background="@color/white"
-                    android:gravity="center"
                     tools:text="1.79%"
                     android:textColor="@color/green_water"
-                    android:textSize="@dimen/text_size_18" />
+                    android:textSize="@dimen/text_size_18"
+                    android:background="@color/white"
+                    android:gravity="center"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -129,87 +132,93 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/grey_light"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_8"
                     android:text="@string/term_quote"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_8"/>
 
                 <TextView
                     android:id="@+id/retrievalDate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/white"
-                    android:gravity="center"
                     tools:text="D+30"
+                    android:layout_margin="@dimen/margin_2"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/white"
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/grey_light"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_8"
                     android:text="@string/minimum_retrieval"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_8"/>
 
                 <TextView
                     android:id="@+id/minimalRetrievalValor"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/white"
-                    android:gravity="center"
                     tools:text="R$ 250,00"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_margin="@dimen/margin_2"
+                    android:background="@color/white"
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/grey_light"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/grey_light"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_8"
                     android:text="@string/balance_permanence"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/grey_light"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_8"/>
 
                 <TextView
                     android:id="@+id/minimumBalance"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/white"
-                    android:gravity="center"
+                    android:layout_margin="@dimen/margin_2"
                     tools:text="R$ 250,00"
                     android:textColor="@color/grey_dark_2"
-                    android:textSize="@dimen/text_size_20" />
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@color/white"
+                    android:gravity="center"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -218,11 +227,11 @@
             android:layout_width="@dimen/layout_width_0"
             android:layout_height="@dimen/layout_width_80"
             android:layout_marginTop="@dimen/margin_8"
-            android:background="@color/white"
-            android:padding="@dimen/padding_10"
             android:text="@string/tip"
             android:textColor="@color/green_water"
             android:textSize="@dimen/text_size_16"
+            android:background="@color/white"
+            android:padding="@dimen/padding_10"
             app:layout_constraintEnd_toEndOf="@id/retrievalLayout"
             app:layout_constraintStart_toStartOf="@id/retrievalLayout"
             app:layout_constraintTop_toBottomOf="@id/retrievalLayout" />
@@ -232,11 +241,11 @@
             android:layout_width="@dimen/layout_width_0"
             android:layout_height="@dimen/layout_height_60"
             android:layout_marginTop="@dimen/margin_12"
+            android:text="@string/rules_application"
+            android:textSize="@dimen/text_size_20"
             android:background="@color/grey_light"
             android:gravity="left|center"
             android:paddingStart="@dimen/padding_14"
-            android:text="@string/rules_application"
-            android:textSize="@dimen/text_size_20"
             app:layout_constraintEnd_toEndOf="@id/tipInfo"
             app:layout_constraintStart_toStartOf="@id/tipInfo"
             app:layout_constraintTop_toBottomOf="@id/tipInfo"
@@ -269,12 +278,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|right"
-                android:paddingEnd="@dimen/padding_14"
                 tools:text="R$ 250,00"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_16"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingEnd="@dimen/padding_14"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
@@ -291,12 +300,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|left"
-                android:paddingStart="@dimen/padding_14"
                 android:text="@string/minimum_application"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_14"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/padding_14"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
 
@@ -305,12 +314,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|right"
-                android:paddingEnd="@dimen/padding_14"
                 tools:text="R$ 250,00"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_16"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingEnd="@dimen/padding_14"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
@@ -327,12 +336,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|left"
-                android:paddingStart="@dimen/padding_14"
                 android:text="@string/days_convert"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_14"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/padding_14"
                 app:layout_constraintStart_toEndOf="@+id/minimumBalance"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
 
@@ -341,12 +350,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                tools:text="D+2"
+                android:textColor="@color/grey_dark_2"
+                android:textSize="@dimen/text_size_16"
                 android:background="@color/white"
                 android:gravity="center|right"
                 android:paddingEnd="@dimen/padding_14"
-                tools:text="R$ 250,00"
-                android:textColor="@color/grey_dark_2"
-                android:textSize="@dimen/text_size_16"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
 
@@ -363,13 +372,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|left"
-                android:paddingStart="@dimen/padding_14"
                 android:text="@string/hour_limit"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_14"
-                app:layout_constraintStart_toEndOf="@+id/minimumBalance"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/padding_14"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
@@ -377,15 +385,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center|right"
-                android:paddingEnd="@dimen/padding_14"
                 tools:text="14:00"
                 android:textColor="@color/grey_dark_2"
                 android:textSize="@dimen/text_size_16"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingEnd="@dimen/padding_14"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>

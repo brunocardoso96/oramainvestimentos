@@ -9,7 +9,7 @@ class HomeRepository {
     private val service = Api.serviceFundDetail()
 
     suspend fun getFundDetail(): List<FundDetail> {
-        return setListFund(service.getFundDetail())
+        return setListFund(service.getFundDetail(Api.SERIALIZER))
     }
 
     private fun setListFund(list: List<FundDetailResponseItem>): List<FundDetail> {

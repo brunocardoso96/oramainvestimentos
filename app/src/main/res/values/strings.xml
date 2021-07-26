@@ -12,4 +12,7 @@
     <string name="last_year">2021</string>
     <string name="last_month">Mês</string>
     <string name="rules_application">Regras para aplicação</string>
+    <string name="minimum_application_card">Aplicação mínima:</string>
+    <string name="twelve_months">12 meses</string>
+    <string name="dividends">Dividendos</string>
 </resources>
