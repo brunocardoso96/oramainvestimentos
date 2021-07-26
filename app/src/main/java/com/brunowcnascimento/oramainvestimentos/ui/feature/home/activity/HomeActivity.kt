@@ -57,7 +57,7 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun viewBind(){
+    private fun viewBind() {
         recyclerViewHome = binding.rvHome
     }
 }

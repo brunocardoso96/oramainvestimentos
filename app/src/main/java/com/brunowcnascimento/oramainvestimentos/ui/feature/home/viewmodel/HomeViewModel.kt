@@ -8,7 +8,7 @@ import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
 import com.brunowcnascimento.oramainvestimentos.data.repository.HomeRepository
 import kotlinx.coroutines.launch
 
-class HomeViewModel(private val repository: HomeRepository): ViewModel() {
+class HomeViewModel(private val repository: HomeRepository) : ViewModel() {
 
     val fundDetailLiveData = MutableLiveData<List<FundDetail>>()
 
@@ -17,6 +17,7 @@ class HomeViewModel(private val repository: HomeRepository): ViewModel() {
             fundDetailLiveData.postValue(repository.getFundDetail())
         }
     }
+
     class HomeViewModelFactory(private val repository: HomeRepository) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return HomeViewModel(repository) as T

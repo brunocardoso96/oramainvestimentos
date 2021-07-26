@@ -3,11 +3,11 @@ package com.brunowcnascimento.oramainvestimentos.ui.feature.home.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
+import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
 import com.brunowcnascimento.oramainvestimentos.helper.formatCurrency
 import com.brunowcnascimento.oramainvestimentos.helper.formatPercent
 import com.brunowcnascimento.oramainvestimentos.helper.setBarColor
-import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
-import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
 
 class HomeAdapter(
     private val listFundDetail: List<FundDetail>,
