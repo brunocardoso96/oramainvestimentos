@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margin-->
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+
+
+
+    <!--Padding-->
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+
+
+
+    <!--Text Size-->
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+
+    <!--specific measures-->
+    <dimen name="simple_name_width">270dp</dimen>
+    <dimen name="bar_left_width">7dp</dimen>
+    <dimen name="bar_left_height">0dp</dimen>
+
+
+</resources>

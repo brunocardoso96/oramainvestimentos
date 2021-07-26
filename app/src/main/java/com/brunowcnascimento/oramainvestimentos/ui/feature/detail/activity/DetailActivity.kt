@@ -39,11 +39,9 @@ class DetailActivity : AppCompatActivity() {
             monthPercent.text = fundDetail.profitabilityLast12Months?.formatPercent()
             yearPercent.text = fundDetail.profitabilityLastYear?.formatPercent()
             twelvePercent.text = fundDetail.profitabilityLast12Months?.formatPercent()
-
             retrievalDate.text = fundDetail.retrievalQuotation
             minimalRetrievalValor.text = fundDetail.subsequentRetrieval?.formatCurrency()
             minimumBalance.text = fundDetail.minimumBalancePermanence?.formatCurrency()
-
             firstApplication.text = fundDetail.minimumInitialApplication?.formatCurrency()
             applicationMinimum.text = fundDetail.minimumApplication?.formatCurrency()
             dayConvert.text = fundDetail.applicationQuotationDays

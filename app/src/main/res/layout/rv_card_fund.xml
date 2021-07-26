@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="@dimen/margin_16"
+    android:layout_marginVertical="@dimen/margin_8"
     android:id="@+id/cardFund"
     android:background="@drawable/border_cardview">
 
@@ -13,13 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/strategy_background"
-        android:text="Estratégia Renda Variável"
+        tools:text="Estratégia Renda Variável"
         android:textColor="@color/text_color_strategy"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="12dp"
-        android:paddingStart="4dp"
-        android:paddingEnd="4dp"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_12"
+        android:paddingStart="@dimen/padding_4"
+        android:paddingEnd="@dimen/padding_4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -27,11 +28,11 @@
         android:id="@+id/specification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crédito Privado High Grade"
+        tools:text="Crédito Privado High Grade"
         android:textColor="@color/grey_medium"
-        android:textSize="18sp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginStart="@dimen/margin_4"
+        android:layout_marginTop="@dimen/margin_8"
         app:layout_constraintStart_toStartOf="@+id/strategy"
         app:layout_constraintTop_toBottomOf="@+id/strategy" />
 
@@ -39,13 +40,13 @@
         android:id="@+id/simpleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="270dp"
-        android:text="Órama DI Tesouro FIRF Simples LP"
+        android:maxWidth="@dimen/simple_name_width"
+        tools:text="Órama DI Tesouro FIRF Simples LP"
         android:textColor="@color/grey_drak"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_18"
         android:textStyle="bold"
         android:maxLines="3"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/margin_24"
         app:layout_constraintTop_toBottomOf="@+id/specification"
         app:layout_constraintStart_toStartOf="@+id/specification"/>
 
@@ -53,10 +54,10 @@
         android:id="@+id/initApplicationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicação mínima:"
+        tools:text="Aplicação mínima:"
         android:textColor="@color/grey_medium"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginBottom="@dimen/margin_16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/simpleName"/>
 
@@ -64,10 +65,10 @@
         android:id="@+id/minInitApplication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R$1.000,00"
+        tools:text="R$1.000,00"
         android:textColor="@color/grey_drak"
-        android:textSize="18sp"
-        android:layout_marginStart="8dp"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginStart="@dimen/margin_8"
         app:layout_constraintBottom_toBottomOf="@+id/initApplicationText"
         app:layout_constraintStart_toEndOf="@+id/initApplicationText"
         app:layout_constraintTop_toTopOf="@+id/initApplicationText" />
@@ -77,10 +78,10 @@
         android:id="@+id/percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6,09%"
+        tools:text="6,09%"
         android:textColor="@color/grey_drak"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginBottom="@dimen/margin_8"
         app:layout_constraintBottom_toTopOf="@+id/time"
         app:layout_constraintEnd_toEndOf="@+id/time"/>
 
@@ -88,22 +89,21 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="12 meses"
+        tools:text="12 meses"
         android:textColor="@color/grey_medium"
-        android:textSize="16sp"
-        android:layout_marginEnd="16dp"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginEnd="@dimen/margin_16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/initApplicationText"
         app:layout_constraintTop_toTopOf="@+id/initApplicationText"/>
 
     <View
         android:id="@+id/barLeft"
-        android:layout_width="7dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/bar_left_width"
+        android:layout_height="@dimen/bar_left_height"
         android:background="@drawable/bar_left_yellow"
         app:layout_constraintBottom_toBottomOf="@+id/initApplicationText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/strategy" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
