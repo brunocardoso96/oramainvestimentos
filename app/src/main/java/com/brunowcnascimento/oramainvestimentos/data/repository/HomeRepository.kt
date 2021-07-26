@@ -20,8 +20,16 @@ class HomeRepository {
                         name = it.specification.fundMacroStrategy.name,
                         specification = it.specification.fundMainStrategyName,
                         simpleName = it.simpleName,
-                        minInitApplication = it.operability.minimumInitialApplicationAmount,
-                        last12Months = it.profitabilities.m12,
+                        minimumApplication = it.operability.minimumInitialApplicationAmount,
+                        profitabilityLast12Months = it.profitabilities.m12,
+                        profitabilityLastMonth = it.profitabilities.month,
+                        profitabilityLastYear = it.profitabilities.year,
+                        retrievalQuotation = it.operability.retrievalQuotationDaysStr,
+                        subsequentRetrieval = it.operability.minimumSubsequentRetrievalAmount,
+                        minimumBalancePermanence = it.operability.minimumBalancePermanence,
+                        minimumInitialApplication = it.operability.minimumInitialApplicationAmount,
+                        applicationQuotationDays = it.operability.applicationQuotationDaysStr,
+                        applicationTimeLimit = it.operability.applicationTimeLimit,
                         risk = it.specification.fundSuitabilityProfile.scoreRangeOrder
                     )
                 )

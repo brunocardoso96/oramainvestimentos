@@ -25,9 +25,14 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun getFundDetail() {
-
         intent.getSerializableExtra(fundDetailTag).run {
             fundDetail = this as FundDetail
+        }
+    }
+
+    private fun setFundDetail() {
+        binding.run {
+
         }
     }
 

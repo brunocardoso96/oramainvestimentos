@@ -30,8 +30,8 @@ class HomeAdapter(
             strategy.text = listFund.name
             specification.text = listFund.specification
             simpleName.text = listFund.simpleName
-            minInitApplication.text = listFund.minInitApplication?.formatCurrency()
-            percent.text = listFund.last12Months?.formatPercent()
+            minInitApplication.text = listFund.minimumApplication?.formatCurrency()
+            percent.text = listFund.profitabilityLast12Months?.formatPercent()
             barLeft.setBarColor(listFund.risk)
             cardFund.setOnClickListener {
                 onItemClickListener.invoke(listFund)

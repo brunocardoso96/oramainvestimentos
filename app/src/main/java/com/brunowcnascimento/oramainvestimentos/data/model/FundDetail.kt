@@ -6,7 +6,15 @@ data class FundDetail(
     val name: String? = "",
     val specification: String? = "",
     val simpleName: String? = "",
-    val minInitApplication: String? = "",
-    val last12Months: String? = "",
+    val minimumApplication: String? = "",
+    val profitabilityLast12Months: String? = "",
+    val profitabilityLastMonth: String? = "",
+    val profitabilityLastYear: String? = "",
+    val retrievalQuotation: String? = "",
+    val subsequentRetrieval: String? = "",
+    val minimumBalancePermanence: String? = "",
+    val minimumInitialApplication: String? = "",
+    val applicationQuotationDays: String? = "",
+    val applicationTimeLimit: String? = "",
     val risk: Int? = 0
 ) : Serializable
