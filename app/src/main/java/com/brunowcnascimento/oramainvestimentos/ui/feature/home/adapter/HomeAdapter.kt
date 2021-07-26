@@ -10,16 +10,9 @@ import com.brunowcnascimento.oramainvestimentos.data.model.FundDetail
 import com.brunowcnascimento.oramainvestimentos.databinding.RvCardFundBinding
 
 class HomeAdapter(
+    private val listFundDetail: List<FundDetail>,
     private val onItemClickListener: (list: FundDetail) -> Unit
 ) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
-
-    private val listFundDetail = ArrayList<FundDetail>()
-
-    fun addListFundDetail(list: List<FundDetail>) {
-        listFundDetail.clear()
-        listFundDetail.addAll(list)
-        notifyDataSetChanged()
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
         return HomeViewHolder(
