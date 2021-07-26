@@ -1,9 +1,12 @@
 package com.brunowcnascimento.oramainvestimentos.helper
 
+import android.annotation.SuppressLint
 import android.view.View
 import com.brunowcnascimento.oramainvestimentos.R
 import java.text.DecimalFormat
 import java.text.NumberFormat
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 import java.util.*
 
 fun View.setBarColor(risk: Int?) {
@@ -22,4 +25,11 @@ fun String.formatCurrency(): String {
 fun String.formatPercent() : String {
     val df = DecimalFormat("#,##0.00")
     return "${df.format(this.toDouble() * 100)}%"
+}
+
+@SuppressLint("NewApi")
+fun String.formatTimeHHmm(): String {
+    val hour = this.replace(":", "")
+    val localHour = LocalTime.parse(hour, DateTimeFormatter.ofPattern("HHmmss"))
+    return DateTimeFormatter.ofPattern("HH:mm").format(localHour)
 }
